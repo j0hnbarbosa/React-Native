@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
-import { WebView, View } from 'react-native';
+import React from 'react';
+import { WebView } from 'react-native';
 
-class WebViewPage extends Component {
-  render() {
-    return (
-      <WebView
-        source={{ uri: 'https://www.reddit.com/r/reactnative' }}
-        style={{ marginTop: 20 }}
+const WebViewPage = (props) => {
+  const uriReddit = 'https://www.reddit.com';
+  return (
+    <WebView
+      source={{ uri: `${uriReddit}/${props.navigation.getParam("URL", "")}` }}
+      style={{ marginTop: 20 }}
 
-      />
-    );
-  }
+    />
+  );
+
 }
+
 export default WebViewPage;

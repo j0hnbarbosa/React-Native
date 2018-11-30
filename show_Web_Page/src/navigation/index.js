@@ -6,6 +6,7 @@ import {
 } from 'react-navigation';
 import Home from '../components/home';
 import WebViewPage from '../components/screens/webViewPage';
+import ListaNoticiasTopicoSelecionado from '../components/screens/listaNoticiasTopicoSelecionado';
 
 const RootStack = createStackNavigator(
   {
@@ -16,6 +17,11 @@ const RootStack = createStackNavigator(
     WebViewPage: {
       screen: WebViewPage,
       navigationOptions: { title: 'Página' },
+
+    },
+    ListaNoticiasTopicoSelecionado: {
+      screen: ListaNoticiasTopicoSelecionado,
+      navigationOptions: { title: 'Noticias' },
 
     }
 

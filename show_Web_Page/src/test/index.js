@@ -5,7 +5,7 @@ class MyWeb extends Component {
   render() {
     return (
       <WebView
-        source={{uri: 'https://www.reddit.com/r/pokemon/'}}
+        source={{uri: 'https://www.reddit.com/'}}
         style={{marginTop: 20}}
         
       />
