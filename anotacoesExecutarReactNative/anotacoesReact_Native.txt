@@ -1,0 +1,19 @@
+﻿		============React Native===========
+
+@Se o codigo tiver sido clonado, vá para o diretorio e digite: npm install
+
+@Abra o emulador android
+
+@Para criar o apk, instalar e executar o projeto digite: react-native run-android
+
+@Caso o projeto não seja executado digite: react-native start --reset-cache
+
+@para executar o projeto sem que uma nova janela para o Node seja aberta, digite: react-native start run-android
+
+@para executar o projeto no celular siga os passos:
+	1-coloque o "adb" nas variaveis de ambiente(o adb.exe está no SDK do android)
+	2-descubra os aparelhos que estão conectados na maquina: adb devices
+	3-selecione o seu aparelho(aparecera somente um código referente ao aparelho)
+	4-toda vez que seu aparelho for conectado na maquina digite: adb -s "nome aparelho" reverse tcp:8081 tcp:8081
+	5-digite: react-native run-android para instalar e executar o apk (se o apk tiver sido instalado, mas não executou digite: react-native start --reset-cache)
+
